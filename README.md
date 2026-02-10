@@ -14,11 +14,11 @@ Pkg.add(name="Mimi", version="1.5.1")
 Pkg.add(name="MimiGIVE", version="1.0.0")
 ```
 
-Now restart Julia after installing the packages to ensure that the packages are properly loaded.
+These packages can be installed on the order of 10 minutes on a typical computer. Now restart Julia after installing the packages to ensure that the packages are properly loaded.
 
 # Running the model and replication scripts
 
-The full replication code below involves many runs in many specifications sampling across uncertainties in 10,000 Monte Carlo simulations. This takes significant computational time, and thus we recommend running on a high performance computer (HPC). We ran the output on Yale's Grace HPC. However, to produce the main income-weighted SCC results from the paper on a local machine, you can run the following code in the Julia REPL:
+The full replication code below involves many runs in many specifications sampling across uncertainties in 10,000 Monte Carlo simulations. This takes significant computational time, and thus we recommend running on a high performance computer (HPC). We ran the output on Yale's Grace HPC. However, to produce the main income-weighted SCC results from the paper on a local machine, you can run the following code in the Julia REPL, which should take around 12 hours on a typical computer:
 
 ```julia
 using Pkg
